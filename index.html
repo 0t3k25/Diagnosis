@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title>足りないモノ診断</title>
+   <meta name="description" content="性格診断サイト">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- 題名 -->
+        <h1 class="top">あなたに必要なモノ診断</h1>
+        <p class="note">※この診断はネタであり正確性は一切ありません</p>
+    </header>
+       <div class="visitor">
+           <!-- 訪れた人数 -->
+           <p>あなたは <span class="counter"></span>人目の来訪者です。</p>
+       </div> 
+        <div class ="choose_box">
+            <div id="q_01" class="fit" >
+                <p>どっち？</p>
+                <!-- 選択肢1 -->
+                <ul class="flexbox">
+                    <li class="even"><a class="btn" href="#q_02">男</a></li>
+                    <li class="odd"><a clss="btn" href="#q_03">女</a></li>
+                </ul>
+            </div>
+            <div id ="q_02" style="display:none;">
+                <p>ち○こついてる?</p>
+                <!-- 選択肢２ -->
+                <ul class="flexbox">
+                    <li class="even"><a class="btn" href="#q_04">YES</a></li>
+                    <li class="odd"><a class="btn" href="#ans_01">NO</a></li>
+                </ul>
+                <span><a class="btn" href="#q_01">最初に戻る</a></span>
+            </div>
+            <div id ="q_03" style="display:none;">
+                <p>アナ空いてる？</p>
+                <!-- 選択肢3 -->
+                <ul class="flexbox">
+                    <li class="even"><a class="btn" href="#q_04">YES</a></li>
+                    <li class="odd"><a class="btn" href="#ans_01">NO</a></li>
+                </ul>
+                <p><a class="btn" href="#q_01">最初に戻る</a></p>
+            </div>
+            <div id="q_04" style="display:none;">
+                <p>変態ですかぁ？</p>
+                <!-- 選択肢4 -->
+                <ul class="flexbox">
+                    <li class="even"><a class="btn" href="#ans_02">YES</a></li>
+                    <li class="odd"><a class="btn" href="#ans_03">NO</a></li>
+                </ul>
+                <p><a class="btn" href="#q_01">最初に戻る</a></p>
+            </div>
+            <!-- 選択肢の答え -->
+            <div id="ans_01" style="display: none;">
+                <h4>あなたに足りないモノは…性別判定上必要不可欠なモノです。</h4>
+                <p><a class="btn" href="#q_01">最初に戻る</a></p>
+            </div>
+            <div id="ans_02" style="display: none;">
+                <h4>あなたに足りないモノは…逮捕歴です。</h4>
+                <p><a class="btn" href="#q_01">最初に戻る</a></p>
+            </div>
+            <div id="ans_03" style="display: none;">
+                <h4>あなたに足りないモノは…性欲です。</h4>
+                <p><a class="btn" href="#q_01">最初に戻る</a></p>
+            </div>
+        </div>
+    <footer>
+        <!-- 評価ボタン追加 -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
